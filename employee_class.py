@@ -1,6 +1,6 @@
 # 
 class Employee:
-    # constructor of the class. Gets called when we create an object of the class
+    # constructor of the class. Gets called when we create an object of the class contains compulsory fields
     def __init__(self, name, age, department):
         self.name = name
         self.age = age
@@ -16,6 +16,9 @@ class Employee:
         print("Age:", self.age)
         print("Department:", self.department)
 
+    # updates the employees department attribute
+    def transfer_department(self, department):
+        self.department = department
 
 # Creating an object of Employee class
 emp1 = Employee("Vijay", 27, "IT")
